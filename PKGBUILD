@@ -106,12 +106,12 @@ package_lib32-libdrm-amdgpu(){
   move_copyright
 
   # append 32 at the end of binary files
-  #for i in "${pkgdir}/opt/amdgpu/bin/"*; do
-  #  mv "$i" "$i"32
-  #done
+  for i in "${pkgdir}/opt/amdgpu/bin/"*; do
+    mv "$i" "$i"32
+  done
 
   # Remove bin dir
-  rm -rf "${pkgdir}"/opt/amdgpu/bin
+  #rm -rf "${pkgdir}"/opt/amdgpu/bin
   # Remove lib/udev
   rm -rf "${pkgdir}"/lib
   # Remove include dir
