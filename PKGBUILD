@@ -7,12 +7,12 @@
 
 #Maintainer: blacksky3 <https://github.com/blacksky3>
 
-major=5.4.2
+major=5.4.3
 libdrm_major=2.4.113
-minor1=50402
-minor2=1528701
+minor1=50403
+minor2=1538762
 ubuntu_ver=22.04
-repo_folder_ver=5.4.2
+repo_folder_ver=5.4.3
 
 pkgbase=libdrm-amdgpu
 pkgname=(libdrm-amdgpu lib32-libdrm-amdgpu)
@@ -125,14 +125,14 @@ package_lib32-libdrm-amdgpu(){
       "$pkgdir/opt/amdgpu/lib32/pkgconfig/libdrm_radeon.pc"
 }
 
-sha256sums=('8bfab1a5860b0c52bcc9089b24600f3d77f18fb9dac7d3955f623774f934873e'
-            '3a27a205b465ba7017ec947bae5c767339dd858a0d9a2137bf6bee010877650a'
-            '0ad27a95ed267b8a97075a933e4d45091599f99a16fceb8ad1768238b97093ca'
-            '0f51ac8033ce3dbfd26f00cc3f0407ad06585fcf835f6505cb193678c6d115da'
-            '929ceb3700838a50a1a283ea1b8f49a14c4c80b431704ec2e33073719077ae1d'
-            '2f28e43606cd4aa3b3f72316da330f4ce4ab466949149fc692385a415739e0ef'
-            '006b6d8d76b4cca28e783842170179c64b5cd4432160099da7be4b28e0fd4613'
-            'cbad22a25787f95baffba282c05597a48f62461ac3283f81864266c5a4a89e24'
-            '4bbf3dd09f57a22d997d7ec13c9bfaf3b80daec63dc60a45e6fd5671a30dbdeb'
-            '8bc64eb4c483d10293c8bb2edcd756804a6180c7d023876a4d0d27601cc51899'
-            'd48b12b03e9f1fcfd07507dd1b9e666bdd527ebe1e28fa1ed6812fbce4c7d1b1')
+sha256sums=('00bdf8491f90e08875b7b5990a18793908acf725ea244930a3f89fd26efd0ac1'
+            '323fc25f3967353b54da2a9c6461043b04913ce48586c4afbf4c0705ac660dfe'
+            '1fd9df857396a2909f933989c063e32cb10fb3ee3dae8858bd8c5cbcea80c194'
+            'fc099ec78562b615ae2e1b7577e44ed99d17a7bb7d302f7f3c0c671308d42bae'
+            '25d48432f6128a9b8fab6b45486395429e6a228c7ae705450f3ef7137cff7a9e'
+            'dc15538bfd4af9d3de3d63d0d8fcea66f24168de136bb0007517ee84dc2fc3c8'
+            'c58c1f0b7458467db97530b4f956faa0eaa95868cc965a6ec1fbfac1793de28b'
+            '6a3f645872b7f641c6deebe5a5389904465a80f8cb1ac4bd1390229a555150bd'
+            'b0227b1e9f1e00e8d639b4da6fd916db9cbee9d0cdee75ad90579739ea8855d9'
+            'deeec3c1dd9ba51a05b97de5d19e0703a2decce9630d248057446b1b64e7498f'
+            '63a67c62627cbfd1bcb0acd41a9753d27a7bcc8825204a0d4e39394e0ed5e20f')
