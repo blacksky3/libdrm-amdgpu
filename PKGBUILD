@@ -18,6 +18,7 @@ pkgbase=libdrm-amdgpu
 pkgname=(libdrm-amdgpu lib32-libdrm-amdgpu)
 pkgver=${major}
 pkgrel=1
+arch=(x86_64)
 url='https://repo.radeon.com/amdgpu'
 license=(MIT)
 source=(https://repo.radeon.com/amdgpu/${repo_folder_ver}/ubuntu/pool/main/libd/libdrm-amdgpu/libdrm-amdgpu-amdgpu1_${libdrm_major}.${minor1}-${minor2}.${ubuntu_ver}_amd64.deb
