@@ -33,8 +33,6 @@ source=(https://repo.radeon.com/amdgpu/${repo_folder_ver}/ubuntu/pool/main/libd/
         https://repo.radeon.com/amdgpu/${repo_folder_ver}/ubuntu/pool/main/libd/libdrm-amdgpu/libdrm2-amdgpu_${libdrm_major}.${minor1}-${minor2}.${ubuntu_ver}_i386.deb
         https://repo.radeon.com/amdgpu/${repo_folder_ver}/ubuntu/pool/main/libd/libdrm-amdgpu-common/libdrm-amdgpu-common_1.0.0.${minor1}-${minor2}.${ubuntu_ver}_all.deb)
 
-# extracts a debian package
-# $1: deb file to extract
 extract_deb(){
   local tmpdir="$(basename "${1%.deb}")"
   rm -Rf "$tmpdir"
@@ -44,9 +42,6 @@ extract_deb(){
   tar -C "${pkgdir}" -xf data.tar.xz
 }
 
-# move ubuntu specific /usr/lib/x86_64-linux-gnu to /usr/lib
-# $1: debian package library dir (goes from opt/amdgpu or opt/amdgpu-pro and from x86_64 or i386)
-# $2: arch package library dir (goes to usr/lib or usr/lib32)
 move_libdir(){
   local deb_libdir="$1"
   local arch_libdir="$2"
@@ -60,7 +55,6 @@ move_libdir(){
   fi
 }
 
-# move copyright file to proper place and remove debian changelog
 move_copyright(){
   find ${pkgdir}/usr/share/doc -name "changelog.Debian.gz" -delete
   mkdir -p ${pkgdir}/usr/share/licenses/${pkgname}
